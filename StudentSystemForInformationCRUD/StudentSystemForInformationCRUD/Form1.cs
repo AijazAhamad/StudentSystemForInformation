@@ -31,5 +31,11 @@ namespace StudentSystemForInformationCRUD
         {
             Application.Exit();
         }
+
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            FrmNewStudent newstd = new FrmNewStudent();
+            newstd.Show();
+        }
     }
 }

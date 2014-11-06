@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(125, 28);
+            this.label1.Location = new System.Drawing.Point(168, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(301, 25);
             this.label1.TabIndex = 0;
@@ -56,6 +56,7 @@
             this.btnAddNew.TabIndex = 1;
             this.btnAddNew.Text = "Add New Student";
             this.btnAddNew.UseVisualStyleBackColor = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
             // btnViewData
             // 
@@ -107,6 +108,7 @@
             // 
             // Form1
             // 
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(657, 436);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
