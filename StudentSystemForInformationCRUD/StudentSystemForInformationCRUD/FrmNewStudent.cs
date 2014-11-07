@@ -35,6 +35,6 @@ namespace StudentSystemForInformationCRUD
             txtFName.Text = "";
             txtLName.Text = "";
             txtPhone.Text = "";
-        }
+       }
     }
 }

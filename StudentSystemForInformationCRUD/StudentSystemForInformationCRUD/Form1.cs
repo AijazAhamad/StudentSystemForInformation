@@ -37,5 +37,11 @@ namespace StudentSystemForInformationCRUD
             FrmNewStudent newstd = new FrmNewStudent();
             newstd.Show();
         }
+
+        private void btnViewData_Click(object sender, EventArgs e)
+        {
+            DataView newview = new DataView();
+            newview.Show();
+        }
     }
 }
