@@ -43,5 +43,17 @@ namespace StudentSystemForInformationCRUD
             DataView newview = new DataView();
             newview.Show();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FrmUpdate up = new FrmUpdate();
+            up.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            frmDelete del = new frmDelete();
+            del.Show();
+        }
     }
 }
