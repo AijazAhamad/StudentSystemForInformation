@@ -12,7 +12,7 @@ namespace StudentSystemForInformationCRUD
 {
     public partial class FrmUpdate : Form
     {
-        DB_Access dba = new DB_Access();
+        DB_Access dbaa = new DB_Access();
 
         public FrmUpdate()
         {
@@ -32,14 +32,14 @@ namespace StudentSystemForInformationCRUD
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string RegNo = txtRegNo.Text;
-            txtFName.Text = dba.ReturnStudentData("RegNo", "Students", RegNo, "Fname");
-            txtLName.Text = dba.ReturnStudentData("RegNo", "Students", RegNo, "Lname");
-            txtPhone.Text = dba.ReturnStudentData("RegNo", "Students", RegNo, "Phone");
+            txtFName.Text = dbaa.ReturnStudentData("RegNo", "Students", RegNo, "Fname");
+            txtLName.Text = dbaa.ReturnStudentData("RegNo", "Students", RegNo, "Lname");
+            txtPhone.Text = dbaa.ReturnStudentData("RegNo", "Students", RegNo, "Phone");
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            dba.update_students(txtRegNo.Text, txtFName.Text, txtLName.Text, txtPhone.Text);
+            dbaa.update_students(txtRegNo.Text, txtFName.Text, txtLName.Text, txtPhone.Text);
             MessageBox.Show("Successfully updated");
         }
 

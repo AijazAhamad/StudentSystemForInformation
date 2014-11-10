@@ -96,7 +96,7 @@ namespace StudentSystemForInformationCRUD
             
             SqlCommand newCmd = conn.CreateCommand();
             newCmd.CommandType = CommandType.Text;
-            newCmd.CommandText = "SELECT" + Column + "FROM" + Table_Name + "WHERE" + Primary_key + "=" + RegNo + "";
+            newCmd.CommandText = "SELECT" + Column + "FROM" + Table_Name + "WHERE" + Primary_key + "" + RegNo + "";
 
             SqlDataReader dr = newCmd.ExecuteReader();
             
